@@ -4,7 +4,7 @@
 //
 //  Copyright (c) 2012-2013 Peter Steinberger. All rights reserved.
 //
-
+#import <objc/runtime.h>
 #import "PSTCollectionView.h"
 #import "PSTCollectionViewItemKey.h"
 #import "PSTCollectionViewData.h"
@@ -161,7 +161,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - PSTCollection/UICollection interoperability
 
-#import <objc/runtime.h>
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
     NSMethodSignature *signature = [super methodSignatureForSelector:selector];
     if (!signature) {
