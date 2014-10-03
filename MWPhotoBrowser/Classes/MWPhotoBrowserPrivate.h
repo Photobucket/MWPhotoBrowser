@@ -113,7 +113,6 @@
 - (void)cancelControlHiding;
 - (void)hideControlsAfterDelay;
 - (void)setControlsHidden:(BOOL)hidden animated:(BOOL)animated permanent:(BOOL)permanent;
-- (void)toggleControls;
 - (BOOL)areControlsHidden;
 
 // Data
